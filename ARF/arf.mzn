@@ -19,6 +19,7 @@ int : max_cost = n*max(del_mul, del_add);
 
 % General pattern: one array for all, one for add, one for mul
 % because diff2 doesn't seem to work properly otherwise (mixes up the processors?)
+% Probably redundant.
 
 array[1..n] of var 0..max_cost : start_time;
 array[1..card(add)] of var 0..max_cost : start_time_add;
